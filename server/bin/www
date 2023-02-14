@@ -3,6 +3,8 @@
  * Put .env file in the server folder
  * It is listening on port 3001 or the port specified in the environment variable PORT.
  */
+const Switch = require("react-switch");
+Switch.default;
 require("dotenv").config();
 const app = require("../app");
 

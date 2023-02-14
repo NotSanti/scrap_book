@@ -4,7 +4,7 @@
 
 const express = require("express");
 const router = express.Router();
-// const database = require("../db/database");
+const database = require("../db/database");
 
 router.get("/", (_, res) => {
   res.status(200).json({ message: "Hello World from the server API" });
@@ -21,10 +21,10 @@ router.get("/", (_, res) => {
 //   res.sendStatus(200);
 // });
 
-// //get request to fetch all items in db
-// router.get("/data", async (req, res) => {
-//   let data = await database.getAllEntries();
-//   res.status(200).json(data);
-// });
+//get request to fetch all items in db
+router.get("/data", async (req, res) => {
+  let data = await database.getAllEntries();
+  res.status(200).json(data);
+});
 
 module.exports = router;
