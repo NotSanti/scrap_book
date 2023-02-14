@@ -10,7 +10,6 @@ const Home = () => {
         <Navbar />
 
         <div className="main">
-          <h1>HOME PAGE</h1>
           <Random />
         </div>
       </div>

@@ -1,0 +1,16 @@
+.picture img {
+  width: 20vw;
+  height: 20vw;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5%;
+  padding: 5%;
+  background-color: white;
+  width: 30%;
+  box-shadow: 0px 5px 15px black;
+}

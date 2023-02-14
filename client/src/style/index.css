@@ -9,4 +9,11 @@ html {
 .main {
   background-color: #edb6b1;
   border: 2px dotted black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./src/assets/hearts.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
 }

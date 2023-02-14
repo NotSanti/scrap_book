@@ -1,11 +1,18 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import "../style/index.css";
+import PictureList from "../components/PictureList";
 
 const All = () => {
   return (
     <>
-      <Navbar />
-      <h1>ALL </h1>
+      <div className="root">
+        <Navbar />
+
+        <div className="main">
+          <PictureList />
+        </div>
+      </div>
     </>
   );
 };
